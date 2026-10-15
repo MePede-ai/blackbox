@@ -1,0 +1,21 @@
+{
+  "numero": 1,
+  "inicio": "2026-10-12",
+  "fim": "2026-10-18",
+  "exemplo": true,
+  "destaque": "modelos-abertos-perto-dos-fechados-em-codigo",
+  "ultimas": [
+    "assistente-que-le-o-repositorio-inteiro",
+    "modelos-pequenos-ficando-bons-rapido",
+    "agente-sozinho-a-noite-toda"
+  ],
+  "sinais": [
+    "agentes-que-usam-o-computador",
+    "o-que-a-comunidade-roda-em-casa",
+    "contexto-gigante-na-pratica",
+    "tres-ferramentas-de-codigo-comparadas",
+    "artigo-da-semana-sem-matematica"
+  ],
+  "fontesLidas": 12,
+  "minutosDeLeitura": 5
+}

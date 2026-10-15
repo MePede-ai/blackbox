@@ -1,0 +1,28 @@
+{
+  "nome": "BLACKBOX",
+  "assinatura": "by mepede.ai",
+  "slogan": "A IA aberta, toda semana.",
+  "descricao": "Lemos Reddit, Hacker News, X e os blogs dos laboratórios para você ler só o que importa, em cinco minutos.",
+  "curadoria": "Curadoria dos fóruns de IA da gringa",
+  "rodape": "Abrimos a caixa-preta da IA toda semana. Um projeto mepede.ai.",
+  "copyright": "© 2026 BLACKBOX · um projeto mepede.ai · MPA GROUP LTDA",
+  "selo": "Feito com IA, revisado por gente",
+  "newsletter": {
+    "cadencia": "Toda segunda, 7h · grátis",
+    "chamada": "O que importa em IA, no seu e-mail. Dá para sair com um clique.",
+    "chamadaCurta": "O que importa em IA, no seu e-mail."
+  },
+  "indexavel": false,
+  "menu": ["Modelos", "Ferramentas", "Agentes", "Pesquisa"],
+  "assuntos": [
+    "Agentes",
+    "Modelos abertos",
+    "Código com IA",
+    "Contexto longo",
+    "Visão computacional",
+    "Voz",
+    "Robótica",
+    "Pesquisa",
+    "Ferramentas"
+  ]
+}
