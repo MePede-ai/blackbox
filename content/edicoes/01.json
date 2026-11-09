@@ -1,21 +1,21 @@
 {
   "numero": 1,
-  "inicio": "2026-10-12",
-  "fim": "2026-10-18",
-  "exemplo": true,
-  "destaque": "modelos-abertos-perto-dos-fechados-em-codigo",
+  "inicio": "2026-11-02",
+  "fim": "2026-11-08",
+  "exemplo": false,
+  "destaque": "kimi-k3-1-pro-pesos-abertos",
   "ultimas": [
-    "assistente-que-le-o-repositorio-inteiro",
-    "modelos-pequenos-ficando-bons-rapido",
-    "agente-sozinho-a-noite-toda"
+    "openai-images-2-6",
+    "gemini-omni-1-2-flash",
+    "mistral-studio-agentes"
   ],
   "sinais": [
-    "agentes-que-usam-o-computador",
-    "o-que-a-comunidade-roda-em-casa",
-    "contexto-gigante-na-pratica",
-    "tres-ferramentas-de-codigo-comparadas",
-    "artigo-da-semana-sem-matematica"
+    "agentes-de-codigo-co-design-bench",
+    "inkling-2-small",
+    "weight-space-programming",
+    "metr-aceleracao-anthropic",
+    "viggle-remake"
   ],
-  "fontesLidas": 12,
-  "minutosDeLeitura": 5
+  "fontesLidas": 13,
+  "minutosDeLeitura": 26
 }
