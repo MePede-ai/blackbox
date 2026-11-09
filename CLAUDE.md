@@ -16,7 +16,7 @@ Valem para qualquer sessão do Claude que trabalhe para a MePede, inclusive as p
 - Alterar configurações de repositório ou da organização: colaboradores, permissões, apps, webhooks, segredos, proteção de branch, configurações do Actions e visibilidade (público ou privado).
 - Apagar repositório, branch principal, tag ou histórico. Também não faz force push na `main` nem reescreve histórico que já foi publicado.
 - Criar repositório novo.
-- Ler, pedir, guardar ou commitar senha, token, chave de API ou arquivo `.env`. Segredo fica só nas configurações da Vercel ou do GitHub, colocado por uma pessoa do time.
+- Ler, pedir, guardar ou commitar senha, token, chave de API ou arquivo `.env`. Segredo fica só nas configurações da Cloudflare, da Vercel ou do GitHub, colocado por uma pessoa do time.
 - Contratar serviço, subir plano, cadastrar cartão ou aceitar termos em nome da empresa.
 - Mexer em `.github/workflows/` ou em `scripts/` (a trava de validação) sem pedido explícito do Henrique.
 - Publicar fora dos blogs sem OK de uma pessoa: redes sociais, envio de e-mail para a lista da newsletter, mensagens em nome de alguém.
@@ -36,7 +36,7 @@ Valem para qualquer sessão do Claude que trabalhe para a MePede, inclusive as p
   - no máximo 1 imagem por post;
   - no máximo 10 imagens por semana, somando os dois blogs;
   - acima disso, perguntar antes.
-- **Vercel:** plano gratuito, criado pelo time sem cartão. Se passar do limite, o site para e não gera cobrança.
+- **Hospedagem:** Cloudflare Pages, plano gratuito (uso comercial permitido), conta da MePede criada pelo time sem cartão. A Vercel Hobby fica só até a troca terminar.
 - **GitHub:** repositórios públicos e Actions gratuito.
 - **Newsletter e qualquer outro serviço ou API:** só plano gratuito. Plano pago, só com OK do Henrique ou do Enzo.
 

@@ -8,7 +8,17 @@ Regras de segurança e limites para o Claude: veja `CLAUDE.md`.
 
 ## Onde fica no ar
 
-O site é servido em **mepede.ai/blog/blackbox**. O código continua aqui e o deploy continua na Vercel; a landing da MePede só repassa (rewrite) o caminho `/blog/blackbox` para o deploy da Vercel. Por isso o Next usa `basePath: "/blog/blackbox"` (em `next.config.mjs` e `lib/base.ts`, que precisam ficar iguais). Rodando local, abra http://localhost:3000/blog/blackbox.
+O site é servido em **mepede.ai/blog/blackbox**. A landing da MePede só repassa (rewrite) o caminho `/blog/blackbox` para o host do BLACKBOX. Por isso o Next usa `basePath: "/blog/blackbox"` (em `next.config.mjs` e `lib/base.ts`, que precisam ficar iguais). Rodando local, abra http://localhost:3000/blog/blackbox.
+
+### Hospedagem: Cloudflare (Workers com arquivos estáticos)
+
+O BLACKBOX está saindo da Vercel (o plano Hobby não permite uso comercial) para a Cloudflare, plano gratuito. Configuração do projeto na Cloudflare (Workers & Pages → criar aplicação → importar do GitHub):
+
+- Repositório: `MePede-ai/blackbox`, branch de produção `main`.
+- Comando de build: `npm run build:pages`
+- Comando de deploy: `npx wrangler deploy` (lê o `wrangler.jsonc`, que publica a pasta `dist`)
+
+O `build:pages` liga `CF_PAGES=1`; com isso o Next exporta o site estático e o `scripts/pages.mjs` monta `dist/blog/blackbox/` e o `_redirects` da raiz. Também funciona num projeto Pages clássico (pasta de saída `dist`). Fora da Cloudflare (dev local e Vercel, enquanto a troca não termina) o build segue igual ao de antes.
 
 ## Como rodar
 
