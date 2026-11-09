@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import site from "@/content/site.json";
+import { asset } from "@/lib/base";
 
 // O serviço de newsletter ainda não foi escolhido (Brevo, Resend ou a API do Juan).
 // Até lá o formulário valida o e-mail e avisa que as inscrições abrem em breve,
@@ -13,7 +14,7 @@ export default function Assine() {
     <section className="assine" id="assine" aria-labelledby="assine-titulo">
       <div className="wrap">
         <div className="assine__cartao">
-          <img className="assine__foto" src="/images/exemplo/newsletter.jpg" alt="" loading="lazy" />
+          <img className="assine__foto" src={asset("/images/exemplo/newsletter.jpg")} alt="" loading="lazy" />
           <h2 className="glitch" id="assine-titulo">
             <span className="g1" aria-hidden="true">Assine</span>
             <span className="g2" aria-hidden="true">Assine</span>

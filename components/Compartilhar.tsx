@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { SITE_URL as BASE } from "@/lib/base";
 
 type Props = { titulo: string; caminho: string; ordem?: "lateral" | "fim" };
-
-const BASE = "https://blackbox.mepede.ai";
 
 export default function Compartilhar({ titulo, caminho, ordem = "lateral" }: Props) {
   const [copiado, setCopiado] = useState(false);

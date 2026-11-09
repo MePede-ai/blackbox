@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { site } from "@/lib/content";
+import { SITE_URL } from "@/lib/base";
 import Topo from "@/components/Topo";
 import Rodape from "@/components/Rodape";
 import "./globals.css";
@@ -18,7 +19,8 @@ const unbounded = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://blackbox.mepede.ai"),
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: `${SITE_URL}/` },
   title: {
     default: `${site.nome} · ${site.slogan}`,
     template: `%s · ${site.nome}`,

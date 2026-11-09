@@ -6,11 +6,15 @@ Blog semanal com as novidades de IA dos maiores fóruns e fontes da gringa. O de
 
 Regras de segurança e limites para o Claude: veja `CLAUDE.md`.
 
+## Onde fica no ar
+
+O site é servido em **mepede.ai/blog/blackbox**. O código continua aqui e o deploy continua na Vercel; a landing da MePede só repassa (rewrite) o caminho `/blog/blackbox` para o deploy da Vercel. Por isso o Next usa `basePath: "/blog/blackbox"` (em `next.config.mjs` e `lib/base.ts`, que precisam ficar iguais). Rodando local, abra http://localhost:3000/blog/blackbox.
+
 ## Como rodar
 
 ```bash
 npm install
-npm run dev     # http://localhost:3000
+npm run dev     # http://localhost:3000/blog/blackbox
 npm run build   # gera o site estático
 ```
 

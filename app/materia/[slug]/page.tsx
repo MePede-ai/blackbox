@@ -15,6 +15,7 @@ import FotoCard, { metaSinal, paraCard } from "@/components/FotoCard";
 import Indice from "@/components/Indice";
 import Compartilhar from "@/components/Compartilhar";
 import Assine from "@/components/Assine";
+import { SITE_URL, asset } from "@/lib/base";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -31,12 +32,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return {
     title: m.titulo,
     description: m.linhaFina ?? m.resumoCard,
-    alternates: { canonical: `/materia/${m.slug}` },
+    alternates: { canonical: `${SITE_URL}/materia/${m.slug}` },
     openGraph: {
       type: "article",
       title: m.titulo,
       description: m.linhaFina ?? m.resumoCard,
-      images: [{ url: m.imagem.src, alt: m.imagem.alt }],
+      url: `${SITE_URL}/materia/${m.slug}`,
+      images: [{ url: `https://mepede.ai${asset(m.imagem.src)}`, alt: m.imagem.alt }],
       publishedTime: m.data,
     },
   };
@@ -100,7 +102,7 @@ export default async function PaginaMateria({ params }: Params) {
       </header>
 
       <figure className="wrap materia-imagem">
-        <img src={m.imagem.src} alt={m.imagem.alt} fetchPriority="high" />
+        <img src={asset(m.imagem.src)} alt={m.imagem.alt} fetchPriority="high" />
         <figcaption className="legenda">Imagem gerada para a BLACKBOX</figcaption>
       </figure>
 

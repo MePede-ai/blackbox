@@ -8,6 +8,7 @@ import {
   periodo,
   site,
 } from "@/lib/content";
+import { asset } from "@/lib/base";
 import FotoCard, { metaDestaque, paraCard } from "@/components/FotoCard";
 import Sinais from "@/components/Sinais";
 import Assine from "@/components/Assine";
@@ -59,7 +60,7 @@ export default function Home() {
             </div>
             {ultimas.map((m) => (
               <Link key={m.slug} href={`/materia/${m.slug}`} className="ultimas__item">
-                <img className="ultimas__foto" src={m.imagem.src} alt="" loading="lazy" />
+                <img className="ultimas__foto" src={asset(m.imagem.src)} alt="" loading="lazy" />
                 <div className="ultimas__texto">
                   <span className="mono">
                     {m.assunto} · {dataCurta(m.data)}
