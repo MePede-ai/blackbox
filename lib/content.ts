@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { Marked, type Tokens } from "marked";
 import site from "@/content/site.json";
 import { slugify } from "@/lib/slug";
+import { asset } from "@/lib/base";
 
 export { slugify };
 
@@ -76,7 +77,7 @@ function renderizar(md: string) {
       },
       image({ href, title, text }: Tokens.Image) {
         const legenda = title ? `<figcaption>${escapar(title)}</figcaption>` : "";
-        return `<figure class="figura"><img src="${escapar(href)}" alt="${escapar(text)}" loading="lazy" />${legenda}</figure>`;
+        return `<figure class="figura"><img src="${escapar(asset(href))}" alt="${escapar(text)}" loading="lazy" />${legenda}</figure>`;
       },
       paragraph({ tokens }: Tokens.Paragraph) {
         // Imagem sozinha no parágrafo vira figura, sem <p> em volta.

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { dataLonga } from "@/lib/datas";
+import { asset } from "@/lib/base";
 import type { Materia } from "@/lib/content";
 
 export type CardMateria = Pick<
@@ -37,7 +38,7 @@ export default function FotoCard({
     >
       <img
         className="foto-card__img"
-        src={materia.imagem.src}
+        src={asset(materia.imagem.src)}
         alt=""
         loading={prioridade ? "eager" : "lazy"}
         fetchPriority={prioridade ? "high" : undefined}
