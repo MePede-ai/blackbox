@@ -1,0 +1,9 @@
+// Cloudflare Workers com arquivos estáticos (plano grátis). Só serve o que o build:pages monta em dist/.
+{
+  "name": "blackbox",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
