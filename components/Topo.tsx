@@ -104,11 +104,16 @@ export default function Topo() {
     <header className="topo">
       <div className="wrap">
         <div className="topo__linha">
-          <Link href="/" className="logo" aria-label={`${site.nome}, página inicial`}>
-            <span className="logo__caixa" aria-hidden="true" />
-            <span className="logo__nome">{site.nome}</span>
-            <span className="logo__by">{site.assinatura}</span>
-          </Link>
+          <div className="logo">
+            <Link href="/" className="logo__home" aria-label={`${site.nome}, página inicial`}>
+              <span className="logo__caixa" aria-hidden="true" />
+              <span className="logo__nome">{site.nome}</span>
+            </Link>
+            {/* Fora do BLACKBOX: link comum, sem navegação interna do Next. */}
+            <a href="https://mepede.ai" className="logo__by">
+              {site.assinatura}
+            </a>
+          </div>
 
           <nav className="menu" aria-label="Assuntos">
             <Suspense fallback={<LinksMenuEstatico />}>

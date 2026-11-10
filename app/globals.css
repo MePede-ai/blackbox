@@ -249,6 +249,12 @@ ol {
   gap: 12px;
 }
 
+.logo__home {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo__caixa {
   width: 18px;
   height: 18px;
@@ -270,6 +276,15 @@ ol {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--apagado);
+  padding-block: 6px;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.logo__by:hover,
+.logo__by:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
 }
 
 .menu {
@@ -449,7 +464,8 @@ ol {
     padding-block: 14px;
   }
 
-  .logo {
+  .logo,
+  .logo__home {
     gap: 8px;
   }
 
@@ -1311,6 +1327,32 @@ ol {
   line-height: 1.5;
 }
 
+.rodape__mepede {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.rodape__mepede a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding-inline: 16px;
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--fg);
+  background: var(--card);
+  transition: border-color 0.15s;
+}
+
+.rodape__mepede a:hover,
+.rodape__mepede a:focus-visible {
+  border-color: var(--fg);
+}
+
 .rodape__grupos {
   display: contents;
 }
@@ -1402,6 +1444,17 @@ ol {
 
   .rodape__marca p {
     width: auto;
+  }
+
+  .rodape__mepede {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rodape__mepede a {
+    min-height: 48px;
+    justify-content: center;
+    font-size: 15px;
   }
 
   .rodape__grupos {

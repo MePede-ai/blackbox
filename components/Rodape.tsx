@@ -34,6 +34,11 @@ export default function Rodape() {
             <div className="rodape__marca">
               <strong>{site.nome}</strong>
               <p>{site.rodape}</p>
+              {/* Fora do BLACKBOX: links comuns, sem navegação interna do Next. */}
+              <div className="rodape__mepede">
+                <a href="https://mepede.ai">← Voltar para o mepede.ai</a>
+                <a href="https://mepede.ai/blog">Blog da MePede</a>
+              </div>
             </div>
             <div className="rodape__grupos">
               {grupos.map((g) => (
