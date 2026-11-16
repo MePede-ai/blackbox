@@ -1,0 +1,21 @@
+{
+  "numero": 2,
+  "inicio": "2026-11-09",
+  "fim": "2026-11-15",
+  "exemplo": false,
+  "destaque": "claude-fable-5-2",
+  "ultimas": [
+    "gemini-decision-1",
+    "llama-cpp-1-0",
+    "chatgpt-wallet"
+  ],
+  "sinais": [
+    "honeybench-v0-2",
+    "alphaproof-code-signal",
+    "minimax-h3-image",
+    "antigravity-swarm",
+    "modern-web-guidance-1-0"
+  ],
+  "fontesLidas": 19,
+  "minutosDeLeitura": 19
+}
